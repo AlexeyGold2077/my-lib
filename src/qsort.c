@@ -1,4 +1,4 @@
-void qsort(int array[], int left, int right){
+void my_qsort(int array[], int left, int right){
 	if(left >= right)
 		return;
 	int i, j, tmp;
