@@ -14,6 +14,6 @@ void my_qsort(int array[], int left, int right){
 	tmp = array[left];
 	array[left] = array[j];
 	array[j] = tmp;
-	qsort(array, left, j-1);
-	qsort(array, j+1, right);
+	my_qsort(array, left, j-1);
+	my_qsort(array, j+1, right);
 }
